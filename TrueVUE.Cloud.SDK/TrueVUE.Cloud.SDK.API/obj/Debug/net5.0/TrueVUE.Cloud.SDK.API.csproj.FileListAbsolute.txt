@@ -9,3 +9,4 @@ C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Debug\ne
 C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Debug\net5.0\TrueVUE.Cloud.SDK.API.dll
 C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Debug\net5.0\ref\TrueVUE.Cloud.SDK.API.dll
 C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Debug\net5.0\TrueVUE.Cloud.SDK.API.pdb
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Debug\net5.0\TrueVUE.Cloud.SDK.API.csproj.AssemblyReference.cache
