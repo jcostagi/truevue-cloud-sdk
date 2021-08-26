@@ -10,7 +10,7 @@ namespace TrueVUE.Cloud.SDK.API.Endpoints
         [Get("/api/v1/productCatalogs/getProductAttributesValues")]
         Task<List<GetProductInfoResponse>> GetProductInfo([Query] string apikey, [Query] string businessUnitId, [Query] string productCodes, [Query] string languageCode);
 
-        [Get("/api/v1/productAttributes?size=500&productAttributeType=NONE")]
-        Task<ContentResponse<IEnumerable<ProductAttributesResponse>>> GetProductAttributes([Query] string apikey, [Query] string businessUnitId);
+        [Get("/api/v1/productAttributes?size=500")]
+        Task<ContentResponse<IEnumerable<ProductAttributesResponse>>> GetProductAttributes([Query] string apikey, [Query] string businessUnitId, [Query] string productAttributeType);
     }
 }

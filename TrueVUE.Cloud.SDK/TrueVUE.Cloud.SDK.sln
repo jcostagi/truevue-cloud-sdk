@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrueVUE.Cloud.SDK", "TrueVU
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueVUE.Cloud.SDK.API", "TrueVUE.Cloud.SDK.API\TrueVUE.Cloud.SDK.API.csproj", "{5C886B8D-406F-461C-B077-0AF1E0DFA847}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueVUE.Cloud.SDK.Common", "TrueVUE.Cloud.SDK.Common\TrueVUE.Cloud.SDK.Common.csproj", "{CA1FEABD-489F-4C2D-9F7C-BB28C48BE560}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5C886B8D-406F-461C-B077-0AF1E0DFA847}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C886B8D-406F-461C-B077-0AF1E0DFA847}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C886B8D-406F-461C-B077-0AF1E0DFA847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1FEABD-489F-4C2D-9F7C-BB28C48BE560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1FEABD-489F-4C2D-9F7C-BB28C48BE560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1FEABD-489F-4C2D-9F7C-BB28C48BE560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1FEABD-489F-4C2D-9F7C-BB28C48BE560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Refit;
+using System;
 using System.Threading.Tasks;
+using TrueVUE.Cloud.SDK.API.Exceptions;
 using TrueVUE.Cloud.SDK.API.Interfaces;
 
 namespace TrueVUE.Cloud.SDK.API.Services
@@ -17,7 +19,15 @@ namespace TrueVUE.Cloud.SDK.API.Services
 
         public async Task<T> CallAndRetry<T>(Func<Task<T>> func, int retryCount, Func<Exception, int, Task> onRetry = null) where T : class
         {
-            return await _networkService.Retry<T>(func, retryCount, onRetry);
+            try
+            {
+                return await _networkService.Retry<T>(func, retryCount, onRetry);
+            }
+            catch (ApiException ex)
+            {
+                throw new ApiConnectionException(ex.Content, ex.StatusCode);
+            }
+
         }
 
         #endregion

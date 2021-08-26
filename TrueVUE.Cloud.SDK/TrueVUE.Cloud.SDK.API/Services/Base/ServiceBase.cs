@@ -7,9 +7,9 @@ namespace TrueVUE.Cloud.SDK.API.Services.Base
     public class ServiceBase
     {
         protected IApiService ApiService;
-        protected IServiceOptions Options;
+        protected IApiOptions Options;
 
-        public ServiceBase(IApiService apiService, IServiceOptions options)
+        public ServiceBase(IApiService apiService, IApiOptions options)
         {
             ApiService = apiService;
             Options = options;

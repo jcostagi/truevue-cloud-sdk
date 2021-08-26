@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JJgkH2vtDKMRrALKjyYClRs47rQ8JVZwmKXGeRQUFwpFdZu27fnEjmeSms/EcRGE/Yaje1JLr8AZFiK1LGGy9Q==",
+  "dgSpecHash": "C5CrePxZMZpoazZIj59HNtaQBIrHIDFbjZmKVRbynKQHxsRBISv0SnDbcamcEm5VbwRfNrp4Cb6DHonqmZj80A==",
   "success": true,
   "projectFilePath": "C:\\Source\\truevue-cloud-sdk\\TrueVUE.Cloud.SDK\\TrueVUE.Cloud.SDK\\TrueVUE.Cloud.SDK.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jcostagi\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\jcostagi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\jcostagi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

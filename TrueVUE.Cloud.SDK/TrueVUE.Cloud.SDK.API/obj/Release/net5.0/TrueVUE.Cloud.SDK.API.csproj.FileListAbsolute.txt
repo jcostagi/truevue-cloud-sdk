@@ -1,0 +1,15 @@
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\bin\Release\net5.0\TrueVUE.Cloud.SDK.API.deps.json
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\bin\Release\net5.0\TrueVUE.Cloud.SDK.API.dll
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\bin\Release\net5.0\ref\TrueVUE.Cloud.SDK.API.dll
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\bin\Release\net5.0\TrueVUE.Cloud.SDK.API.pdb
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\bin\Release\net5.0\TrueVUE.Cloud.SDK.Common.dll
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\bin\Release\net5.0\TrueVUE.Cloud.SDK.Common.pdb
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Release\net5.0\TrueVUE.Cloud.SDK.API.csproj.AssemblyReference.cache
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Release\net5.0\TrueVUE.Cloud.SDK.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Release\net5.0\TrueVUE.Cloud.SDK.API.AssemblyInfoInputs.cache
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Release\net5.0\TrueVUE.Cloud.SDK.API.AssemblyInfo.cs
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Release\net5.0\TrueVUE.Cloud.SDK.API.csproj.CoreCompileInputs.cache
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Release\net5.0\TrueVUE.Cloud.SDK.API.csproj.CopyComplete
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Release\net5.0\TrueVUE.Cloud.SDK.API.dll
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Release\net5.0\ref\TrueVUE.Cloud.SDK.API.dll
+C:\Source\truevue-cloud-sdk\TrueVUE.Cloud.SDK\TrueVUE.Cloud.SDK.API\obj\Release\net5.0\TrueVUE.Cloud.SDK.API.pdb

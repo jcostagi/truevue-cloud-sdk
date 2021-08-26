@@ -1,7 +1,7 @@
 ﻿using Refit;
 using System.Net.Http;
 
-namespace TrueVUE.Cloud.SDK.API.Endpoints
+namespace TrueVUE.Cloud.SDK.API.Interfaces
 {
     public interface IHttpService
     {

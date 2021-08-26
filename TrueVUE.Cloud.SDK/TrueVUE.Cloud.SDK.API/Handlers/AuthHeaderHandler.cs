@@ -19,7 +19,7 @@ namespace TrueVUE.Cloud.SDK.API.Handlers
         {
             var token = _authTokenService.GetToken();
 
-            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             return await base.SendAsync(request, cancellationToken).ConfigureAwait(false);
         }

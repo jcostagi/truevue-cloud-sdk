@@ -8,7 +8,7 @@ namespace TrueVUE.Cloud.SDK.API.Services
 {
     public class HttpService : IHttpService
     {
-        public HttpService(IAuthHeaderHandler authHeaderHandler, IServiceOptions options)
+        public HttpService(IAuthHeaderHandler authHeaderHandler, IApiOptions options)
         {
             HttpClient = new HttpClient(authHeaderHandler as HttpMessageHandler)
             {
