@@ -9,7 +9,7 @@ using TrueVUE.Cloud.SDK.Epc.Models.Epc;
 
 namespace TrueVUE.Cloud.SDK.Epc
 {
-    class EpcValidator : IEpcValidator
+    public class EpcValidator : IEpcValidator
     {
         #region Properties
 

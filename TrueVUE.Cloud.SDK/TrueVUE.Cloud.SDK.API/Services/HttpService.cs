@@ -1,7 +1,6 @@
 ﻿using Refit;
 using System;
 using System.Net.Http;
-using TrueVUE.Cloud.SDK.API.Endpoints;
 using TrueVUE.Cloud.SDK.API.Interfaces;
 
 namespace TrueVUE.Cloud.SDK.API.Services

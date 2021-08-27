@@ -17,16 +17,9 @@ namespace TrueVUE.Cloud.SDK.Epc
     {
         #region Constructors
 
-        public EpcSDK(
-            IEpcValidator epcValidator
-            //IProductSDK productSDK,
-            //ISettingsSDK settingsSDK
-            /*ProductIdMappingCache productIdMappingCache*/)
+        public EpcSDK(IEpcValidator epcValidator)
         {
             EpcValidator = epcValidator;
-            //SettingsSDK = settingsSDK;
-            //ProductSDK = productSDK;
-            //ProductIdMappingCache = productIdMappingCache;
         }
 
         #endregion
@@ -112,20 +105,5 @@ namespace TrueVUE.Cloud.SDK.Epc
 
             return null;
         }
-
-        //async Task<long?> LookupProduct(string attribute, long productId)
-        //{
-        //    long? product = null;
-        //    try
-        //    {
-        //        product = null; //await ProductSDK.ProductIdByAttribute(attribute, productId.ToString());
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Log.Error(ex, $"Cannot get the product attribute while decoding (Attribute: {attribute} Product id: {productId})");
-        //    }
-
-        //    return product;
-        //}
     }
 }
