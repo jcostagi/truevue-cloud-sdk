@@ -13,7 +13,7 @@ namespace TrueVUE.Cloud.SDK.API.Requests
         public bool Success { get; set; }
         public string UserId { get; set; }
         public string WriteDate { get; set; }
-        public string ZoneId { get; set; }
+        public Guid ZoneId { get; set; }
         public RecipeRequest Recipe { get; set; }
     }
 }

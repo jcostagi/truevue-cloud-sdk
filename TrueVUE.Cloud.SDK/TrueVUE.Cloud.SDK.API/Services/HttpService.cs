@@ -11,7 +11,7 @@ namespace TrueVUE.Cloud.SDK.API.Services
         {
             HttpClient = new HttpClient(authHeaderHandler as HttpMessageHandler)
             {
-                BaseAddress = new Uri(options.BusinessUnitUrl),
+                BaseAddress = options.BusinessUnitUrl == null ? null : new Uri(options.BusinessUnitUrl),
                 Timeout = TimeSpan.FromSeconds(15)
             };
         }

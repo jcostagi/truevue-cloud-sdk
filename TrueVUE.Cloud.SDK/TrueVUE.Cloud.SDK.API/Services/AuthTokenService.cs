@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using TrueVUE.Cloud.SDK.API.Interfaces;
+﻿using TrueVUE.Cloud.SDK.API.Interfaces;
 
 namespace TrueVUE.Cloud.SDK.API.Services
 {
