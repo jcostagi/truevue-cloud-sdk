@@ -26,7 +26,14 @@ namespace TrueVUE.Cloud.SDK.API.Services
             //    throw new NotConnectedException(Constants.MESSAGE_INTERNET_NOT_CONNECTED);
             //}
 
-            return await RetryInner(func);
+            try
+            {
+                return await RetryInner(func);
+            }
+            catch (ApiException)
+            {
+                throw;
+            }
         }
 
         public async Task<T> Retry<T>(Func<Task<T>> func, int retryCount)
@@ -37,7 +44,14 @@ namespace TrueVUE.Cloud.SDK.API.Services
             //    throw new NotConnectedException(Constants.MESSAGE_INTERNET_NOT_CONNECTED);
             //}
 
-            return await RetryInner(func, retryCount);
+            try
+            {
+                return await RetryInner(func, retryCount);
+            }
+            catch (ApiException)
+            {
+                throw;
+            }
         }
 
         public async Task<T> Retry<T>(Func<Task<T>> func, int retryCount, Func<Exception, int, Task> onRetry)
@@ -48,7 +62,14 @@ namespace TrueVUE.Cloud.SDK.API.Services
             //    throw new NotConnectedException(Constants.MESSAGE_INTERNET_NOT_CONNECTED);
             //}
 
-            return await RetryInner(func, retryCount, onRetry);
+            try
+            {
+                return await RetryInner(func, retryCount, onRetry);
+            }
+            catch (ApiException)
+            {
+                throw;
+            }
         }
 
         public async Task<T> RetryWithRefreshToken<T>(Func<Task<T>> func, int retryCount, Func<Exception, int, Task> onRetryAsync, string refreshToken)
@@ -93,16 +114,24 @@ namespace TrueVUE.Cloud.SDK.API.Services
 
         internal async Task<T> RetryInner<T>(Func<Task<T>> func, int retryCount = 1, Func<Exception, int, Task> onRetry = null)
         {
-            var onRetryInner = new Func<Exception, int, Task>((e, i) =>
+            try
             {
-                return Task.Factory.StartNew(() => {
+                var onRetryInner = new Func<Exception, int, Task>((e, i) =>
+                {
+                    return Task.Factory.StartNew(() =>
+                    {
 #if DEBUG
-                    System.Diagnostics.Debug.WriteLine($"Retry #{i} due to exception '{(e.InnerException ?? e).Message}'");
+                        System.Diagnostics.Debug.WriteLine($"Retry #{i} due to exception '{(e.InnerException ?? e).Message}'");
 #endif
+                    });
                 });
-            });
 
-            return await CommomRetryPolicy(retryCount).ExecuteAsync<T>(func);
+                return await CommomRetryPolicy(retryCount).ExecuteAsync<T>(func);
+            }
+            catch (ApiException)
+            {
+                throw;
+            }
         }
 
         internal async Task<T> RetryInnerWithRefreshToken<T>(Func<Task<T>> func, int retryCount, Func<Exception, int, Task> onRetryAsync, string refreshToken)
@@ -134,16 +163,23 @@ namespace TrueVUE.Cloud.SDK.API.Services
 
         private AsyncRetryPolicy CommomRetryPolicy(int retryCount)
         {
-            return Policy
-                .HandleInner<ApiException>()
-                .RetryAsync(retryCount, (ex, count) =>
-                {
+            try
+            {
+                return Policy
+                    .HandleInner<ApiException>()
+                    .RetryAsync(retryCount, (ex, count) =>
+                    {
 #if DEBUG
-                    System.Diagnostics.Debug.WriteLine($"Retry #{count} due to exception '{(ex.InnerException ?? ex).Message}'");
+                        System.Diagnostics.Debug.WriteLine($"Retry #{count} due to exception '{(ex.InnerException ?? ex).Message}'");
 #endif
-                    Console.WriteLine($"Retrying #{count}. ERROR: {ex.Message}");
-                    Logger.Error($"Retrying #{count}. ERROR: {ex.Message}");
-                });
+                        Console.WriteLine($"Retrying #{count}. ERROR: {ex.Message}");
+                        Logger.Error($"Retrying #{count}. ERROR: {ex.Message}");
+                    });
+            }
+            catch (ApiException)
+            {
+                throw;
+            }
         }
     }
 }
