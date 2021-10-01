@@ -12,5 +12,6 @@ namespace TrueVUE.Cloud.SDK.API.Services
         public string Token { get; set; }
         public DecompressionMethods Compression { get; set; }
         public string ApiKey { get; set; }
+        public bool IsAnonimousRequest { get; set; }
     }
 }
