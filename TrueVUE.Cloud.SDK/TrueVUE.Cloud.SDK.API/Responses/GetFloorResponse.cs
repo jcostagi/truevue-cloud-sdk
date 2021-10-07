@@ -7,6 +7,6 @@ namespace TrueVUE.Cloud.SDK.API.Responses
     {
         public Guid FloorId { get; set; }
         public string FloorName { get; set; }
-        public IList<GetZoneResponse> Zones { get; set; }
+        public IList<ZoneResponse> Zones { get; set; }
     }
 }

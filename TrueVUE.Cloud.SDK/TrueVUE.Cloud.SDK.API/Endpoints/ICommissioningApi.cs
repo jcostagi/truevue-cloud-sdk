@@ -9,6 +9,10 @@ namespace TrueVUE.Cloud.SDK.API.Endpoints
     public interface ICommissioningApi
     {
         [Post("/api/v1/commissioning/allocate")]
-        Task<AllocateResponse> Allocate([Query] string apikey, [Query] Guid tenantId, [Body] AllocateRequest request);
+        Task<AllocateResponse> Allocate(
+            [Query] string apikey, 
+            [Query] Guid tenantId, 
+            [Body] AllocateRequest request,
+            [Authorize("Bearer")] string token = null);
     }
 }

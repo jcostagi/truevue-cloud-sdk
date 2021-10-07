@@ -7,9 +7,9 @@ namespace TrueVUE.Cloud.SDK.API.Services
 {
     public class HttpService : IHttpService
     {
-        public HttpService(IAuthHeaderHandler authHeaderHandler, IApiOptions options)
+        public HttpService(IApiOptions options)
         {
-            HttpClient = new HttpClient(authHeaderHandler as HttpMessageHandler)
+            HttpClient = new HttpClient()
             {
                 BaseAddress = options.BusinessUnitUrl == null ? null : new Uri(options.BusinessUnitUrl),
                 Timeout = TimeSpan.FromSeconds(15)

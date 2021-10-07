@@ -10,7 +10,7 @@ namespace TrueVUE.Cloud.SDK.API
         {
             services.AddTransient<INetworkService, NetworkService>();
             services.AddTransient<IAuthTokenService, AuthTokenService>();
-            services.AddTransient<IAuthHeaderHandler, Handlers.AuthHeaderHandler>();
+            //services.AddTransient<IAuthHeaderHandler, Handlers.AuthHeaderHandler>();
             services.AddSingleton<IApiService, ApiService>();
             services.AddTransient<IHttpService, HttpService>();
         }
