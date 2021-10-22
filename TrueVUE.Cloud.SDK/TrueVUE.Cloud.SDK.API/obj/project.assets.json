@@ -62,7 +62,7 @@
           "lib/netstandard2.0/Polly.dll": {}
         }
       },
-      "Refit/6.0.94": {
+      "Refit/6.1.15": {
         "type": "package",
         "dependencies": {
           "System.Net.Http.Json": "5.0.0"
@@ -78,11 +78,11 @@
           "buildTransitive/netstandard2.0/refit.targets": {}
         }
       },
-      "Refit.Newtonsoft.Json/6.0.94": {
+      "Refit.Newtonsoft.Json/6.1.15": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Refit": "6.0.94"
+          "Refit": "6.1.15"
         },
         "compile": {
           "lib/net5.0/Refit.Newtonsoft.Json.dll": {}
@@ -333,14 +333,15 @@
         "polly.nuspec"
       ]
     },
-    "Refit/6.0.94": {
-      "sha512": "LvaRSV6MZER/W4QPX9sOcFql6E7lhPEBsJ20zwyxI4wapN7Yyk9fJJfxAZapQE6AOVvw8+j7do1x2zE//zUeWQ==",
+    "Refit/6.1.15": {
+      "sha512": "T1qNkTmPvSsPxhZMvzTySdx9c0Zr87DAXFMSx3rK2RxBInzcPz+9qJPVkkF28/9Dn9TTpp9vN6Sn5Hhms837fQ==",
       "type": "package",
-      "path": "refit/6.0.94",
+      "path": "refit/6.1.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "analyzers/cs/InterfaceStubGenerator.Core.dll",
+        "analyzers/dotnet/roslyn3.8/cs/InterfaceStubGeneratorV1.dll",
+        "analyzers/dotnet/roslyn4.0/cs/InterfaceStubGeneratorV2.dll",
         "build/netstandard2.0/refit.targets",
         "buildTransitive/netstandard2.0/refit.props",
         "buildTransitive/netstandard2.0/refit.targets",
@@ -352,15 +353,15 @@
         "lib/netstandard2.0/Refit.xml",
         "lib/netstandard2.1/Refit.dll",
         "lib/netstandard2.1/Refit.xml",
-        "refit.6.0.94.nupkg.sha512",
+        "refit.6.1.15.nupkg.sha512",
         "refit.nuspec",
         "refit_logo.png"
       ]
     },
-    "Refit.Newtonsoft.Json/6.0.94": {
-      "sha512": "C8opzmT5p3INH7bFjTAC9cBP9074uUA/SeCBw20Hp4hdMFhuRt/h2QfIsHlDZlfG/rNUt2+oRfJsnwKUUbGCyA==",
+    "Refit.Newtonsoft.Json/6.1.15": {
+      "sha512": "n/244wFWKcwIi3g8ESMaKJ9OvsbTCkm9iGeN1uwIodG9YyYyZkz6956/Hxen4rRM2LP822VHbgS3MNa14ESjCw==",
       "type": "package",
-      "path": "refit.newtonsoft.json/6.0.94",
+      "path": "refit.newtonsoft.json/6.1.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -372,7 +373,7 @@
         "lib/netstandard2.0/Refit.Newtonsoft.Json.xml",
         "lib/netstandard2.1/Refit.Newtonsoft.Json.dll",
         "lib/netstandard2.1/Refit.Newtonsoft.Json.xml",
-        "refit.newtonsoft.json.6.0.94.nupkg.sha512",
+        "refit.newtonsoft.json.6.1.15.nupkg.sha512",
         "refit.newtonsoft.json.nuspec",
         "refit_logo.png"
       ]
@@ -577,8 +578,8 @@
     "net5.0-windows7.0": [
       "Microsoft.Extensions.DependencyInjection >= 5.0.2",
       "Polly >= 7.2.2",
-      "Refit >= 6.0.94",
-      "Refit.Newtonsoft.Json >= 6.0.94",
+      "Refit >= 6.1.15",
+      "Refit.Newtonsoft.Json >= 6.1.15",
       "TrueVUE.Cloud.SDK.Common >= 1.0.0",
       "log4net >= 2.0.12"
     ]
@@ -644,11 +645,11 @@
           },
           "Refit": {
             "target": "Package",
-            "version": "[6.0.94, )"
+            "version": "[6.1.15, )"
           },
           "Refit.Newtonsoft.Json": {
             "target": "Package",
-            "version": "[6.0.94, )"
+            "version": "[6.1.15, )"
           },
           "log4net": {
             "target": "Package",
@@ -670,7 +671,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

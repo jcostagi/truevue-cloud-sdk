@@ -17,6 +17,7 @@ namespace TrueVUE.Cloud.SDK.API.Endpoints
         Task<GetListResponse<GetStoreResponse>> GetSites(
             [Query] string apikey, 
             [Query] Guid businessUnitId, 
-            [Query] string type = "ALL");
+            [Query] string type = "ALL",
+            [Authorize("Bearer")] string token = null);
     }
 }
